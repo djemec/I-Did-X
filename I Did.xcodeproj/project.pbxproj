@@ -12,6 +12,8 @@
 		C44188112009D6A000EB7B09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C441880F2009D6A000EB7B09 /* Main.storyboard */; };
 		C44188132009D6A000EB7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44188122009D6A000EB7B09 /* Assets.xcassets */; };
 		C44188162009D6A000EB7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44188142009D6A000EB7B09 /* LaunchScreen.storyboard */; };
+		C4DE420D20CC71BC005CC682 /* I Did.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4DE420B20CC71BC005CC682 /* I Did.xcdatamodeld */; };
+		C4DE420F20CC7B8D005CC682 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE420E20CC7B8D005CC682 /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C44188122009D6A000EB7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44188152009D6A000EB7B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C44188172009D6A000EB7B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DE420C20CC71BC005CC682 /* I Did.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "I Did.xcdatamodel"; sourceTree = "<group>"; };
+		C4DE420E20CC7B8D005CC682 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				C441880B2009D6A000EB7B09 /* AppDelegate.swift */,
 				C441880D2009D6A000EB7B09 /* ViewController.swift */,
 				C441880F2009D6A000EB7B09 /* Main.storyboard */,
+				C4DE420B20CC71BC005CC682 /* I Did.xcdatamodeld */,
 				C44188122009D6A000EB7B09 /* Assets.xcassets */,
 				C44188142009D6A000EB7B09 /* LaunchScreen.storyboard */,
 				C44188172009D6A000EB7B09 /* Info.plist */,
+				C4DE420E20CC7B8D005CC682 /* Activity.swift */,
 			);
 			path = "I Did";
 			sourceTree = "<group>";
@@ -91,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jemec Corp";
 				TargetAttributes = {
 					C44188072009D6A000EB7B09 = {
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DE420D20CC71BC005CC682 /* I Did.xcdatamodeld in Sources */,
 				C441880E2009D6A000EB7B09 /* ViewController.swift in Sources */,
+				C4DE420F20CC7B8D005CC682 /* Activity.swift in Sources */,
 				C441880C2009D6A000EB7B09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -211,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -234,6 +244,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -262,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -278,7 +290,7 @@
 				DEVELOPMENT_TEAM = 9L8KE62522;
 				INFOPLIST_FILE = "I Did/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.djemec.jc.I-Did";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.djemec.jc.I-will";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +305,7 @@
 				DEVELOPMENT_TEAM = 9L8KE62522;
 				INFOPLIST_FILE = "I Did/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.djemec.jc.I-Did";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.djemec.jc.I-will";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,6 +334,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4DE420B20CC71BC005CC682 /* I Did.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4DE420C20CC71BC005CC682 /* I Did.xcdatamodel */,
+			);
+			currentVersion = C4DE420C20CC71BC005CC682 /* I Did.xcdatamodel */;
+			path = "I Did.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C44188002009D6A000EB7B09 /* Project object */;
 }
