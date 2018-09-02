@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ActivityData" representedClassName="ActivityData" syncable="YES" codeGenerationType="class">
+        <attribute name="activityId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RefActivityType" inverseName="occurances" inverseEntity="RefActivityType" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="RefActivityType" representedClassName="RefActivityType" syncable="YES" codeGenerationType="class">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="vice" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="occurances" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ActivityData" inverseName="activity" inverseEntity="ActivityData" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ActivityData" positionX="-1532" positionY="-124" width="128" height="103"/>
+        <element name="RefActivityType" positionX="-1280" positionY="-126" width="128" height="103"/>
+    </elements>
+</model>
